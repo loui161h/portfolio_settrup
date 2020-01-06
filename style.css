@@ -1,0 +1,731 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background: url(baggrund/splash4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+    /*    border: 20px solid #ffdce2;*/
+}
+
+
+button {
+    border: none;
+    background-color: white;
+}
+
+/*SPLASH */
+
+#splash {
+    width: 100%;
+    height: 100vh;
+    background-image: url(baggrund/splashmobile4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/*SPLASH slut */
+
+/* GENERELLE INDSTILLINGER */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+
+}
+
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+    letter-spacing: 1px;
+}
+
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+    letter-spacing: 1px;
+
+
+}
+
+.link {
+    padding: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: #ffd2eb;
+    /*   background-color: palegoldenrod;*/
+    padding: 13px;
+
+}
+
+.link a:hover {
+    color: white;
+    /* background-color: beige;*/
+    background-color: #e6dada;
+}
+
+
+.headline {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+    color: black;
+    opacity: 80%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+
+}
+
+
+.headline2 {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+/* GENERELLE INDSTILLINGER slut */
+/* HEADER MENU  */
+
+header {
+    width: 100vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+header nav a {
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+header a {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: black;
+    height: 70px;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #ffd2eb;
+}
+
+header nav a:visited {
+    color: black;
+
+}
+
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    display: none;
+}
+
+#menuknap {
+    display: inline-block;
+    color: black;
+    margin: 2vw;
+    padding: 1vw;
+    cursor: pointer;
+    font-size: 2.5rem;
+    /*    color: palevioletred;*/
+}
+
+#menu {
+    position: relative;
+    width: 100vw;
+    background-color: white;
+}
+
+
+/* HEADER MENU slut */
+
+
+/* PORTFOLIO  */
+
+/*.projekter_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.projekt_pic {
+    width: 32vw;
+    height: 32vw;
+    width: 25vw;
+    height: 25vw;
+    align-content: center;
+    object-fit: cover;
+}
+
+.projekt_pic:hover {
+    color: grey;
+
+}
+
+
+#projekter .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projekter .col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0vw;
+    margin: 2vw;
+    margin-top: 0vw;
+    margin-left: 4vw;
+
+}
+
+#projekter .col_btm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 0vw;
+    margin: 2vw;
+    margin-top: 0vw;
+    margin-left: 4vw;
+    padding-bottom: 2vw;
+}
+
+.projekter_txt {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+        font-size: 1rem;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    opacity: 70%;
+}
+
+.projekt_wrapper1,
+.projekt_wrapper2,
+.projekt_wrapper3,
+.projekt_wrapper4,
+.projekt_wrapper5,
+.projekt_wrapper6,
+.projekt_wrapper7 {
+    display: flex;
+    position: relative;
+    padding: 2px;
+    justify-content: center;
+}
+
+.projekter_txt:hover {
+    color: grey;
+    background-color: white;
+    opacity: 50%;
+}
+
+
+#projekter img {
+    border: 1vw solid #ffdce2;
+
+}
+
+#projekter img:hover {
+    box-shadow: 0 0 10px #ccc;
+}*/
+
+
+/* PORTFOLIO slut */
+
+
+
+/* WEB */
+
+#grundweb .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 5vw;
+
+    background-color: white;
+    opacity: 80%;
+
+}
+
+
+#grundweb .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#web_img img {
+    width: 80%;
+    padding: 0vw;
+    margin: 3vw;
+    /*   border: 20px solid #ffdce2;*/
+    border: 20px solid #ffd2eb;
+
+}
+
+/* WEB slut */
+
+
+/* UX */
+
+
+#ux .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#ux .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.ux_img img {
+    width: 60%;
+    padding: 0vw;
+    margin-left: 10vw;
+    margin-top: 0vw;
+    border: 20px solid #ffd2eb;
+}
+
+
+
+/* UX slut */
+
+/* DESIGN SPRINT */
+
+/*#designsprint .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vw;
+
+    margin: 3vw;
+    background-color: white;
+    opacity: 80%;
+
+}
+
+
+#designsprint .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#design_img img {
+    width: 50%;
+    padding: 0vw;
+    margin-left: 12vw;
+    border: 20px solid #ffdce2;
+}
+
+
+#sketch_img img {
+    width: 90%;
+    padding: 1.5vw;
+
+}
+
+#decide_img img {
+    width: 90%;
+    padding: 1.5vw;
+}
+
+#vote_img img {
+    width: 90%;
+    padding: 1.5vw;
+}*/
+
+
+/* DESIGN SPRINT slut */
+
+/* ANIMATION */
+
+#animation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#animation .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+
+#animation_img img {
+    width: 80%;
+    padding: 0vw;
+    margin: 4vw;
+    margin-left: 6vw;
+    border: 20px solid #ffdce2;
+}
+
+.spil_billede iframe {
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    border: 0;
+    align-items: center;
+    border: 30px solid #ffdce2;
+}
+
+#billeddeling_img img {
+    width: 90%;
+    margin: 4vw;
+    margin-left: 4vw;
+    border: 20px solid #ffd2eb;
+
+}
+
+/*#skitser_img img {
+    width: 30%;
+        padding: 2vw;
+}
+
+#moodboard_img img {
+    width: 50%;
+}
+
+#diagrammer_img img {
+    width: 30%;
+    margin: 1vw;
+    padding: 2vw;
+}
+
+#dokumentation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}*/
+
+
+/* ANIMATION slut */
+
+/* SEX OG SAMFUND */
+/*#sexogsamfund .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#sexogsamfund .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#billeddeling_img img {
+    width: 90%;
+    padding: 0vw;
+    margin: 3vw;
+    border: 20px solid #ffdce2;
+
+}*/
+
+/* SEX OG SAMFUND slut */
+
+/* PILOT  */
+/*#pilot .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#pilot .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+
+.pilotvideo {
+    width: 100%;
+    display: block;
+    margin-left: 2vw;
+
+}*/
+
+/* PILOT slut */
+
+/* CONTENT  */
+#content .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    margin: 4vw;
+    background-color: white;
+    opacity: 80%;
+}
+
+
+#content .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.redesignvideo {
+    width: 100%;
+    display: block;
+    margin: 2vw;
+}
+
+#content_img img {
+    width: 95%;
+    margin: 0vw;
+    margin-left: 2vw;
+    /*  border: 20px solid #ffdce2;*/
+    border: 20px solid #ffd2eb;
+}
+
+#handler_img img {
+    width: 80%;
+    margin: 2vw;
+    margin-left: 4vw;
+    border: 20px solid #ffd2eb;
+}
+
+.pilotvideo {
+    width: 100%;
+    display: block;
+    margin-left: 2vw;
+}
+
+
+/* CONTENT slut */
+
+
+/* CV  */
+#cv .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cv .col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    flex-basis: 400px;
+    padding: 3vw;
+    margin: 6vw;
+    margin-top: 1vw;
+    background-color: white;
+    opacity: 80%;
+    text-align: center;
+}
+
+#cv ul {
+    list-style-type: none;
+}
+
+#cv h2 {
+    text-align: center;
+}
+
+
+/* CV slut */
+
+/* ABOUT  */
+
+#about .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.col_right {
+    flex-grow: 1;
+    flex-basis: 600px;
+    padding: 3vw;
+    margin: 3vw;
+    margin-top: 2vw;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    opacity: 75%;
+
+
+}
+
+.col_left {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 1vw;
+    margin: 3vw;
+    justify-content: center;
+}
+
+
+#about img {
+    width: 100%;
+    border: 20px solid #ffd2eb;
+
+
+}
+
+#about ul {
+    list-style-type: none;
+}
+
+
+/* ABOUT slut */
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: white;
+    opacity: 80%;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 0.5vw;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.6vw;
+}
+
+/* FOOTER slut */
+
+
+/* MEDIAQUERIES */
+
+@media only screen and (min-width: 800px) {
+    #splash {
+        background-image: url(baggrund/splashweb4.png);
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    .hidden {
+        transform: translateX(0);
+        opacity: 1;
+        display: inline-block;
+    }
+
+    header li {
+        display: inline-block;
+        letter-spacing: 5px;
+        color: #817f7f;
+
+    }
+
+    header nav {
+        padding: 0.1rem;
+    }
+
+
+    header nav li {
+        background-color: transparent;
+        text-decoration: none;
+        color: #817f7f;
+    }
+
+    header a {
+        height: 20px;
+    }
+}
+
+
+
+/* MEDIAQUERIES slut */
